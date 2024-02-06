@@ -27,3 +27,18 @@
         }
     }
 }
+
+@media (max-width: 768px) {
+    .navbar {
+        &__img {
+            height: auto;
+            width: 145px;
+        }
+        &__links {
+            gap: 26px;
+            & a {
+                font-size: 12px;
+            }
+        }
+    }
+}

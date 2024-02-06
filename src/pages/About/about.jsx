@@ -9,10 +9,10 @@ function About() {
         <div className="body">
             <main>
                 <div className="about">
-                    <WelcomeSection image={mountain}/>
+                    <WelcomeSection image={mountain} key={'mountainImg'}/>
                     <div className="about__content">
                         {aboutContent.map((section) => (
-                            <ContentRoller title={section.title} content={section.description}/>
+                            <ContentRoller title={section.title} content={section.description} key={'ContentRoller' + section.title}/>
                         ))}
                     </div>
                 </div>

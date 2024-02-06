@@ -12,3 +12,11 @@
         gap: 20px;
     }
 }
+
+@media (max-width: 768px) {
+    .about {
+        &__content {
+            width: 100%;
+        }
+    }
+}

@@ -33,3 +33,13 @@
         cursor: pointer;
     }
 }
+
+@media (max-width: 768px) {
+    .imgRoller {
+        height: 225px;
+        &__arrowLeft, .imgRoller__arrowRight {
+            top: 43%;
+            width: 20px;
+        }
+    }
+}

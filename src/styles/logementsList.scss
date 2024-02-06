@@ -43,3 +43,17 @@
         }
     }
 }
+
+@media (max-width: 768px) {
+    .logementsList {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        background-color: inherit;
+        gap: 20px;
+        &__element {
+            min-width: 100%;
+            height: 225px;
+            margin: 0;
+        }
+    }
+}

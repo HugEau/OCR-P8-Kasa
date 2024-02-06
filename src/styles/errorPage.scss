@@ -22,3 +22,14 @@
         }
     }
 }
+
+@media (max-width: 768px) {
+    .errorPage {
+        &__number {
+            font-size: 96px;
+        }
+        &__text {
+            font-size: 18px;
+        }
+    }
+}

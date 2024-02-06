@@ -3,23 +3,23 @@ import '../../styles/contentRoller.scss';
 import Arrow from '../../assets/upArrow.svg'
 
 function ContentRoller(props) {
-    let contentRollerTitle = props.title;
-    let contentRollerContent = props.content;
+    const ContentRollerTitle = props.title;
+    const ContentRollerContent = props.content;
 
     return (
-        <details>
-            <summary>{contentRollerTitle} <img className='collapseIcon' src={Arrow} alt='summary arrow'/> </summary>
-            {Array.isArray(contentRollerContent) ? (
-                <p>
-                    {contentRollerContent.map((item, index) => (
-                        <React.Fragment key={index}>
+        <details className='contentRoller' key={ContentRollerTitle}>
+            <summary className='contentRoller__summary' key={"summary" + ContentRollerTitle}>{ContentRollerTitle} <img className='collapseIcon' src={Arrow} alt='summary arrow'/> </summary>
+            {Array.isArray(ContentRollerContent) ? (
+                <p className='contentRoller__text'>
+                    {ContentRollerContent.map((item, index) => (
+                        <React.Fragment key={`summaryP${index}`}>
                             {item}
-                            {index < contentRollerContent.length - 1 && <br />}
+                            {index < ContentRollerContent.length - 1 && <br />}
                         </React.Fragment>
                     ))}
                 </p>
             ) : (
-                <p>{contentRollerContent}</p>
+                <p className='contentRoller__text' key={`summaryP`}>{ContentRollerContent}</p>
             )}
         </details>
     );

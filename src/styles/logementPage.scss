@@ -46,7 +46,8 @@ $main-color: #ff6060;
                         min-width: 115px;
                         height: 25px;
                         background-color: $main-color;
-                        border-radius: 20px;
+                        border-radius: 5px;
+                        font-weight: bold;
                     }
                 }
             }
@@ -78,6 +79,41 @@ $main-color: #ff6060;
             justify-content: space-between;
             width: 100%;
             gap: 20px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .logementPage {
+        &__contentTop {
+            flex-direction: column;
+            gap: 20px;
+            &--titleLocate {
+                gap: 10px;
+                &--tags {
+                    padding-top: 0;
+                    & p {
+                        font-size: 10px;
+                        min-width: 84px;
+                        padding: 0 5px;
+                    }
+                }
+            }
+            &--nameRating {
+                flex-direction: row-reverse;
+                justify-content: space-between;
+                align-items: center;
+                &--rating {
+                    width: 100px;
+                    padding-top: 0;
+                    & img {
+                        width: 20%;
+                    }
+                }
+            }
+        }
+        &__contentBottom {
+            flex-direction: column;
         }
     }
 }
