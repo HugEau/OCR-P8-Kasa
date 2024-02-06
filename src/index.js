@@ -7,6 +7,8 @@ import Home from './pages/Home/';
 import About from './pages/About/about';
 import Footer from './components/Footer/footer';
 import Error from './pages/Error/error'
+import LogementPage from './pages/LogementPage/logementPage';
+import { logements } from './datas/logements';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -17,6 +19,13 @@ root.render(
         <Route path="/" element={<Home />} />
         <Route path="/About" element={<About />} />
         <Route path="*" element={<Error />} />
+        {logements.map((logement) => (
+          <Route
+            key={logement.id}
+            path={`/logement/${logement.id}`}
+            element={<LogementPage { ...logement } />}
+          />
+        ))}
       </Routes>
       <Footer />
     </Router>

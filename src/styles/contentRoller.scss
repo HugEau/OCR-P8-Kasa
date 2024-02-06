@@ -1,0 +1,31 @@
+details {
+    width: 100%;
+
+    &[open] {
+        border-radius: 20px;
+        background-color: #f6f6f6;
+        & summary .collapseIcon {
+            transform: rotate(180deg);
+        }
+    }
+    & summary {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #ff6060;
+        color: white;
+        padding: 10px 15px;
+        font-size: 24px;
+        font-weight: bold;
+        border-radius: 20px;
+        cursor: pointer;
+        & .collapseIcon {
+            transition: all 0.3s;
+        }
+    }
+    & p {
+        padding: 20px 15px;
+        font-size: 18px;
+        line-height: 150%;
+    }
+}

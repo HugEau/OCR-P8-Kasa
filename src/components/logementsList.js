@@ -1,20 +1,21 @@
 import { logements } from "../datas/logements" 
 import "../styles/logementsList.scss"
 import beach from "../assets/beach.png"
+import WelcomeSection from '../components/welcomeSection/welcomeSection'
 
 function LogementsList() {
+    const welcomeTitle = 'Chez vous, partout et ailleurs'
     return (
-        <div className="homePage">
-            <div className="welcomeSection">
-                <img className="welcomeSection__img" src={beach} alt="beach" />
-                <h1 class="welcomeSection__text">Chez vous, partout et ailleurs</h1>
-            </div>
-            <ul className="logementsList">
+        <div className="homePage" key={"homePage"}>
+            <WelcomeSection image={beach} title={welcomeTitle}/>
+            <ul className="logementsList" key={'logementsList'}>
                 {logements.map((bien) => (
-                    <li className="logementsList__element" key={ bien.id }>
-                        <img className="logementsList__element--img" src={ bien.cover } alt ={ bien.title }/>
-                        <h1 className="logementsList__element--text"> {bien.title} </h1>
-                    </li>
+                    <a href={"/logement/" + bien.id} key={'a'+ bien.id}>
+                        <li className="logementsList__element" key={ bien.id }>
+                            <img className="logementsList__element--img" src={ bien.cover } alt ={ bien.title }/>
+                            <h1 className="logementsList__element--text"> {bien.title} </h1>
+                        </li>
+                    </a>
                 ))}
             </ul>
         </div>

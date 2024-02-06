@@ -1,0 +1,35 @@
+.imgRoller {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 415px;
+    overflow: hidden;
+    &__img {
+        &--hidden {
+            display: none;
+        }
+        &--shown {
+            position: absolute;
+            width: 100%;
+            object-fit: contain;
+            border-radius: 15px;
+        }
+    }
+    &__arrowLeft {
+        position: absolute;
+        left: 5px;
+        top: 180px;
+        z-index: 2;
+        cursor: pointer;
+    }
+    &__arrowRight {
+        position: absolute;
+        right: 5px;
+        top: 180px;
+        z-index: 2;
+        cursor: pointer;
+    }
+}
