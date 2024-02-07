@@ -17,7 +17,7 @@ root.render(
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/About" element={<About />} />
+        <Route path="/about" element={<About />} />
         <Route path="*" element={<Error />} />
         {logements.map((logement) => (
           <Route

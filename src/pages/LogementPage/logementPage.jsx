@@ -7,6 +7,7 @@ import emptyStar from "../../assets/emptyStar.svg"
 
 function LogementPage( LogementItem ) {
     let rating = +LogementItem.rating
+
     function itemRating(rating) {
         const stars = [];
         
@@ -20,6 +21,7 @@ function LogementPage( LogementItem ) {
     
         return stars;
     }
+    
     return ( 
         <div className="body">
             <main>

@@ -1,5 +1,5 @@
 import '../../styles/Home.scss';
-import LogementsList from '../../components/logementsList';
+import LogementsList from '../../components/LogementList/logementsList';
 
 function Home() {
   return (
