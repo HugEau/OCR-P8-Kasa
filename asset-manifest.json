@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/OCR-P8_Kasa/static/css/main.bab06175.css",
-    "main.js": "/OCR-P8_Kasa/static/js/main.212c48ec.js",
+    "main.js": "/OCR-P8_Kasa/static/js/main.bfc74783.js",
     "static/media/beach.png": "/OCR-P8_Kasa/static/media/beach.0f820b85d9a6a7e177b3.png",
     "static/media/mountain.png": "/OCR-P8_Kasa/static/media/mountain.dcb694fe527941d22129.png",
     "static/media/logo.svg": "/OCR-P8_Kasa/static/media/logo.be135a25af5bdda5805dfb5407c78400.svg",
@@ -12,10 +12,10 @@
     "static/media/RightArrow.svg": "/OCR-P8_Kasa/static/media/RightArrow.88153a5d119c2744ffe34dca1ef843df.svg",
     "static/media/LeftArrow.svg": "/OCR-P8_Kasa/static/media/LeftArrow.479ce4e609bd4178370200f39273711f.svg",
     "main.bab06175.css.map": "/OCR-P8_Kasa/static/css/main.bab06175.css.map",
-    "main.212c48ec.js.map": "/OCR-P8_Kasa/static/js/main.212c48ec.js.map"
+    "main.bfc74783.js.map": "/OCR-P8_Kasa/static/js/main.bfc74783.js.map"
   },
   "entrypoints": [
     "static/css/main.bab06175.css",
-    "static/js/main.212c48ec.js"
+    "static/js/main.bfc74783.js"
   ]
 }
