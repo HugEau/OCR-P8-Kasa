@@ -1,6 +1,6 @@
 import ImgRoller from "../../components/ImgRoller/imgRoller"
 import ContentRoller from "../../components/ContentRoller/contentRoller"
-import '../../styles/logementPage.scss'
+import './logementPage.scss'
 import filledStar from "../../assets/filledStar.svg"
 import emptyStar from "../../assets/emptyStar.svg"
 

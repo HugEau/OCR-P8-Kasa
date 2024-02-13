@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import LeftArrow from '../../assets/LeftArrow.svg';
 import RightArrow from '../../assets/RightArrow.svg';
-import '../../styles/imgRoller.scss';
+import './imgRoller.scss';
 
 function ImgRoller({ images }) {
     const [currentIndex, setCurrentIndex] = useState(0);

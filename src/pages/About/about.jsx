@@ -1,7 +1,7 @@
-import WelcomeSection from "../../components/welcomeSection/welcomeSection";
-import ContentRoller from "../../components/ContentRoller/contentRoller";
+import WelcomeSection from "../../components/welcomeSection/welcomeSection.jsx";
+import ContentRoller from "../../components/ContentRoller/contentRoller.jsx";
 import mountain from "../../assets/mountain.png"
-import '../../styles/about.scss'
+import './about.scss'
 import { aboutContent } from "../../datas/aboutContent.js"
 
 function About() {

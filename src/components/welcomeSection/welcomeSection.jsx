@@ -1,4 +1,4 @@
-import '../../styles/welcomeSection.scss'
+import './welcomeSection.scss'
 
 function WelcomeSection(props) {
     return (

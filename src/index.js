@@ -4,10 +4,10 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import './styles/index.scss';
 import Header from './components/Header/header';
 import Home from './pages/Home/';
-import About from './pages/About/about';
+import About from './pages/About/About';
 import Footer from './components/Footer/footer';
-import Error from './pages/Error/error'
-import LogementPage from './pages/LogementPage/logementPage';
+import Error from './pages/Error/Error'
+import LogementPage from './pages/LogementPage/LogementPage';
 import { logements } from './datas/logements';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

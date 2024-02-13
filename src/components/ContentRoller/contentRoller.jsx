@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../styles/contentRoller.scss';
+import './contentRoller.scss';
 import Arrow from '../../assets/upArrow.svg'
 
 function ContentRoller(props) {

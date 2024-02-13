@@ -1,4 +1,4 @@
-import '../../styles/Home.scss';
+import './Home.scss';
 import LogementsList from '../../components/LogementList/logementsList';
 
 function Home() {

@@ -1,5 +1,5 @@
 import { logements } from "../../datas/logements" 
-import "../../styles/logementsList.scss"
+import "./logementsList.scss"
 import beach from "../../assets/beach.png"
 import WelcomeSection from '../welcomeSection/welcomeSection'
 
