@@ -4,13 +4,16 @@ import './logementPage.scss'
 import filledStar from "../../assets/filledStar.svg"
 import emptyStar from "../../assets/emptyStar.svg"
 import { logements } from "../../datas/logements"
+import Error from "../Error/Error"
 
 
 function LogementPage() {
     let id = window.location.pathname.split("/logement/").pop()
     console.log(id)
     let LogementItem = logements.find((logement) => logement.id === id)
-    console.log(LogementItem)
+    if (!LogementItem) {     
+        return <Error />
+    }
     let rating = +LogementItem.rating
 
     function itemRating(rating) {
