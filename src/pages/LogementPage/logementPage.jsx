@@ -1,3 +1,5 @@
+import { useParams } from "react-router-dom";
+
 import ImgRoller from "../../components/ImgRoller/imgRoller"
 import ContentRoller from "../../components/ContentRoller/contentRoller"
 import './logementPage.scss'
@@ -8,7 +10,7 @@ import Error from "../Error/Error"
 
 
 function LogementPage() {
-    let id = window.location.pathname.split("/logement/").pop()
+    let { id } = useParams();
     console.log(id)
     let LogementItem = logements.find((logement) => logement.id === id)
     if (!LogementItem) {     
