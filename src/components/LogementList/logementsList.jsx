@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import { logements } from "../../datas/logements" 
 import "./logementsList.scss"
 import beach from "../../assets/beach.png"
@@ -10,12 +11,12 @@ function LogementsList() {
             <WelcomeSection image={beach} title={welcomeTitle}/>
             <ul className="logementsList" key={'logementsList'}>
                 {logements.map((bien) => (
-                    <a href={"/logement/" + bien.id} key={'a'+ bien.id}>
+                    <Link to={"/logement/" + bien.id} key={'a'+ bien.id}>
                         <li className="logementsList__element" key={ bien.id }>
                             <img className="logementsList__element--img" src={ bien.cover } alt ={ bien.title }/>
                             <h2 className="logementsList__element--text"> {bien.title} </h2>
                         </li>
-                    </a>
+                    </Link>
                 ))}
             </ul>
         </div>

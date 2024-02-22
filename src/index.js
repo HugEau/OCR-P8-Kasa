@@ -8,7 +8,6 @@ import About from './pages/About/About';
 import Footer from './components/Footer/footer';
 import Error from './pages/Error/Error'
 import LogementPage from './pages/LogementPage/LogementPage';
-import { logements } from './datas/logements';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -19,13 +18,8 @@ root.render(
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="*" element={<Error />} />
-        {logements.map((logement) => (
-          <Route
-            key={logement.id}
-            path={`/logement/${logement.id}`}
-            element={<LogementPage { ...logement } />}
+          <Route path={`/logement/:id`} element={<LogementPage />}
           />
-        ))}
       </Routes>
       <Footer />
     </Router>
